@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Datasheet
+
+# Model Form Field configuration
+form: $/google/spreadsheet/models/datasheet/fields.yaml
+
+# Model Class name
+modelClass: Google\Spreadsheet\Models\Datasheet
+
+# Default redirect location
+defaultRedirect: google/spreadsheet/datasheets
+
+# Create page
+create:
+    title: Create Datasheet
+    redirect: google/spreadsheet/datasheets/update/:id
+    redirectClose: google/spreadsheet/datasheets
+
+# Update page
+update:
+    title: Edit Datasheet
+    redirect: google/spreadsheet/datasheets
+    redirectClose: google/spreadsheet/datasheets
+
+# Preview page
+preview:
+    title: Preview Datasheet
